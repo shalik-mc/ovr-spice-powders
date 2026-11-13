@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102519" />
+    <meta name="description" content="Discover OVR Spice Powders: pure taste and natural goodness for everyday Indian cooking." />
+    <title>OVR Spice Powders — Pure Taste. Natural Goodness.</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement"><span class="announcement-mark" aria-hidden="true">✦</span> Pure taste. Natural goodness. <span class="announcement-divider">·</span> Made for the meals you love</div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="OVR Spice Powders home">
+          <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M21.8 35.7c-1.1-10.5 2.2-18.4 10.4-24.2-1 8.2-4.3 14.1-10.4 17.7"/><path d="M21.3 31.4C19.4 23 14.5 18 6 16.4c2.7 6.4 7.3 10.3 14.2 11.7"/><path d="M9 37.4h26"/><path d="M21.7 29.4v8"/></svg></span>
+          <span class="brand-copy"><strong>OVR</strong><small>SPICE POWDERS</small></span>
+        </a>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="products.html">Our spices</a>
+          <a class="nav-link" href="index.html#story">Our story</a>
+          <a class="nav-link" href="index.html#footer">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button search-toggle" type="button" aria-label="Search spices" aria-expanded="false" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+          <button class="cart-button" type="button" data-open-cart aria-label="Open shopping bag">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1.4 12H5.4L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cart-label">Bag</span><span class="cart-count" id="cart-count">0</span>
+          </button>
+          <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+        </div>
+      </div>
+      <div class="search-panel" id="search-panel" hidden><label for="product-search">Find your favourite spice</label><div class="search-input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="product-search" type="search" placeholder="Try turmeric or chilli…" autocomplete="off" /><button type="button" id="submit-search">Search</button><button type="button" id="clear-search">Clear</button></div></div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> THE HEART OF EVERY GOOD MEAL</p>
+          <h1>Good food begins<br />with <em>good spice.</em></h1>
+          <p class="hero-description">Bring home the colour, warmth and aroma that turn everyday cooking into something worth gathering for.</p>
+          <div class="hero-actions"><a class="button button-gold" href="products.html">Shop our spices <span aria-hidden="true">↗</span></a><a class="text-link" href="#story">A little about OVR <span aria-hidden="true">→</span></a></div>
+          <div class="hero-note"><span class="note-leaf" aria-hidden="true">✳</span><span><strong>Pure taste.</strong> Natural goodness.</span></div>
+        </div>
+        <div class="hero-visual" role="region" aria-roledescription="carousel" aria-label="OVR Spice Powders product slideshow">
+          <div class="hero-photo"><img id="hero-product-image" src="assets/coriander.jpg" alt="OVR Coriander Powder, 100 g tin" /></div>
+          <div class="hero-stamp"><span>OVR</span><small>THE SPICE OF HOME</small><i aria-hidden="true">✳</i></div>
+          <div class="hero-slide-label"><span id="hero-slide-note">Fresh, gently citrusy</span><strong id="hero-slide-name">Coriander Powder</strong></div>
+          <div class="hero-carousel-controls"><button class="slide-arrow" id="hero-prev" type="button" aria-label="Previous spice">←</button><div class="slide-dots" id="hero-dots" aria-label="Choose a spice"></div><button class="slide-arrow" id="hero-next" type="button" aria-label="Next spice">→</button></div>
+        </div>
+        <div class="hero-ornament" aria-hidden="true">OVR · 01</div>
+      </section>
+
+      <section class="promise-bar" aria-label="Brand promise">
+        <div><span class="promise-icon">✦</span><span>Flavour for everyday cooking</span></div><span class="promise-divider" aria-hidden="true"></span>
+          <div><span class="promise-icon">❋</span><span>Six kitchen essentials</span></div><span class="promise-divider" aria-hidden="true"></span>
+        <div><span class="promise-icon">◌</span><span>Pure taste, natural goodness</span></div>
+      </section>
+
+      <section class="pantry-preview section-shell">
+        <div class="pantry-preview-copy"><p class="eyebrow eyebrow-dark"><span></span> THE OVR PANTRY</p><h2>Six favourites.<br /><em>One good pantry.</em></h2><p>Meet the everyday spices that bring colour, warmth and aroma to your cooking.</p><a class="button button-dark" href="products.html">Explore all six spices <span aria-hidden="true">↗</span></a></div>
+        <a class="pantry-preview-image" href="products.html" aria-label="Shop the six OVR spices"><img src="assets/product-strip.jpg" alt="Six OVR spice powder tins: coriander, turmeric, chilli, pepper, garam masala and cumin" /><span>THE OVR PANTRY <b>↗</b></span></a>
+      </section>
+
+      <section class="interlude" id="story">
+        <div class="interlude-image" role="img" aria-label="Spices and OVR brand emblem"></div>
+        <div class="interlude-copy"><p class="eyebrow"><span></span> A LITTLE MORE FLAVOUR</p><h2>For the recipes<br />that feel like <em>home.</em></h2><p>From a weekday dal to the Sunday meal everyone waits for, spices have a way of making a kitchen feel like yours. OVR brings six familiar favourites together for the food you love to make.</p><a class="button button-outline" href="products.html">Find your favourites <span aria-hidden="true">↗</span></a><span class="interlude-flourish" aria-hidden="true">✳</span></div>
+      </section>
+
+      <section class="closing-note"><div class="closing-rule"></div><p>Season generously. <em>Gather often.</em></p><span>OVR SPICE POWDERS</span><div class="closing-rule"></div></section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="footer-main">
+        <div class="footer-brand-block"><a class="brand brand-footer" href="#home"><span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M21.8 35.7c-1.1-10.5 2.2-18.4 10.4-24.2-1 8.2-4.3 14.1-10.4 17.7"/><path d="M21.3 31.4C19.4 23 14.5 18 6 16.4c2.7 6.4 7.3 10.3 14.2 11.7"/><path d="M9 37.4h26"/><path d="M21.7 29.4v8"/></svg></span><span class="brand-copy"><strong>OVR</strong><small>SPICE POWDERS</small></span></a><p>Pure taste. Natural goodness.<br />A little more love in every meal.</p></div>
+        <div class="footer-links"><h3>Explore</h3><a href="products.html">Our spices</a><a href="index.html#story">Our story</a><a href="index.html#home">Back to top ↑</a></div>
+        <div class="footer-links"><h3>Get in touch</h3><p>Questions about an order?<br />We’d love to hear from you.</p><button class="footer-order-link" type="button" data-contact>Chat with us <span aria-hidden="true">↗</span></button></div>
+        <div class="footer-seal" aria-hidden="true"><span>OVR</span><small>PURE TASTE<br />NATURAL GOODNESS</small><b>✳</b></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> OVR Spice Powders</span><span>Made with a little extra flavour.</span><a href="#home">Back to top ↑</a></div>
+    </footer>
+
+    <div class="overlay" id="overlay" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-modal="true" role="dialog" aria-hidden="true">
+      <div class="drawer-heading"><div><p class="eyebrow eyebrow-dark"><span></span> YOUR OVR BAG</p><h2>A good choice.</h2></div><button class="close-button" type="button" data-close-cart aria-label="Close shopping bag">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span class="empty-bowl" aria-hidden="true">✳</span><h3>Your bag is waiting.</h3><p>Add a favourite spice and let’s get cooking.</p><button class="button button-dark" type="button" data-close-cart>Explore spices <span aria-hidden="true">→</span></button></div>
+      <div class="drawer-bottom" id="drawer-bottom"><div class="subtotal-row"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div><p class="delivery-note">Delivery details can be confirmed when you place your order.</p><button class="button button-dark checkout-button" type="button" id="checkout-button">Continue to order <span aria-hidden="true">↗</span></button><p class="secure-note"><span aria-hidden="true">✦</span> Your order will open in WhatsApp for confirmation.</p></div>
+    </aside>
+
+    <div class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" aria-hidden="true">
+      <button class="close-button modal-close" type="button" data-close-checkout aria-label="Close order form">×</button>
+      <p class="eyebrow eyebrow-dark"><span></span> ONE LAST THING</p><h2 id="checkout-title">Where should we send it?</h2><p class="modal-description">Share your details and we’ll prepare your order message in WhatsApp.</p>
+      <form id="checkout-form">
+        <label>Your name<input name="name" autocomplete="name" required placeholder="Name" /></label>
+        <label>Phone number<input name="phone" type="tel" autocomplete="tel" required placeholder="Your WhatsApp number" /></label>
+        <label>Delivery address<textarea name="address" autocomplete="street-address" rows="3" required placeholder="House, street, city, PIN code"></textarea></label>
+        <button class="button button-dark checkout-submit" type="submit">Send order on WhatsApp <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="modal-footnote">We’ll confirm availability, delivery and payment with you directly.</p>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
